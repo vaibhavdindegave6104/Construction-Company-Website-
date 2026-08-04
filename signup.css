@@ -1,0 +1,413 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding-top: 80px;
+    background: #2b2b2b;
+
+}
+
+
+
+
+header {
+background: white;
+position: fixed;
+top: 0;
+width: 100%;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+z-index: 1000;
+}
+
+.header-container {
+width: 90%;
+max-width: 1200px;
+margin: auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 0;
+}
+
+.container {
+width: 90%;
+max-width: 1200px;
+margin: auto;
+}
+
+.logo {
+display: flex;
+align-items: center;
+gap: 10px;
+color: #1a1d23;
+}
+
+.logo img {
+width: 50px;
+height: 50px;
+}
+
+.logo h2 {
+font-size: 24px;
+color: #1a1d23;
+}
+
+.logo h2 span {
+color: #1a1d23;
+}
+
+/* Navigation */
+
+nav ul {
+display: flex;
+list-style: none;
+gap: 12px;
+}
+
+nav ul li {
+margin: 0;
+}
+
+nav ul li a {
+text-decoration: none;
+color: black;
+font-size: 17px;
+font-weight: bold;
+padding: 8px 10px;
+transition: 0.3s;
+}
+
+nav ul li a:hover {
+color: blue;
+}
+
+/* ===========================
+Tablet
+=========================== */
+
+@media (max-width: 992px) {
+
+.header-container {
+width: 95%;
+}
+
+.logo img {
+width: 45px;
+height: 45px;
+}
+
+.logo h2 {
+font-size: 22px;
+}
+
+nav ul {
+gap: 8px;
+}
+
+nav ul li a {
+font-size: 15px;
+padding: 6px;
+}
+}
+
+/* ===========================
+Mobile
+=========================== */
+
+@media (max-width: 768px) {
+
+.header-container {
+flex-direction: column;
+padding: 10px 0;
+}
+
+.logo {
+margin-bottom: 10px;
+}
+
+nav {
+width: 100%;
+}
+
+nav ul {
+flex-wrap: wrap;
+justify-content: center;
+gap: 10px;
+}
+
+nav ul li a {
+font-size: 15px;
+padding: 6px 8px;
+}
+}
+
+/* ===========================
+Small Mobile
+=========================== */
+
+@media (max-width: 480px) {
+
+.logo img {
+width: 40px;
+height: 40px;
+}
+
+.logo h2 {
+font-size: 20px;
+}
+
+nav ul {
+gap: 6px;
+}
+
+nav ul li a {
+font-size: 14px;
+padding: 5px;
+}
+} 
+
+
+
+
+
+.hero {
+    text-align: center;
+    padding: 120px 20px 80px;
+    color: rgb(5, 5, 5);
+    height: 35vh;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: rgb(253, 253, 253);
+}
+
+.hero p {
+    font-size: 18px;
+    color: rgb(253, 253, 253);
+}
+
+
+.signup {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px 80px;
+}
+
+.signup-box {
+    width: 450px;
+    background: rgba(255, 255, 255, 0.925);
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.646);
+
+}
+
+.signup-box h2 {
+    text-align: center;
+    color: #050505;
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+
+
+.signup-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.signup-box button {
+    width: 100%;
+    padding: 12px;
+    background: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-link a {
+    text-decoration: none;
+    color: #0d6efd;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+footer {
+background: #1a1d23;
+color: white;
+padding: 50px 30px 20px;
+}
+
+.footer-container {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+gap: 30px;
+}
+
+.footer-box {
+flex: 1 1 220px;
+min-width: 220px;
+}
+
+.footer-box h2 {
+margin-bottom: 15px;
+color: #0d6efd;
+}
+
+.footer-box p {
+margin: 10px 0;
+line-height: 1.6;
+}
+
+.footer-box a {
+display: block;
+color: white;
+text-decoration: none;
+margin: 10px 0;
+transition: 0.3s;
+}
+
+.footer-box a:hover {
+color: #0d6efd;
+}
+
+hr {
+margin: 30px 0 15px;
+border: none;
+border-top: 1px solid #444;
+}
+
+.copyright {
+text-align: center;
+font-size: 15px;
+}
+
+/* ===========================
+Tablet
+=========================== */
+
+@media (max-width: 992px) {
+
+footer {
+padding: 40px 25px 20px;
+}
+
+.footer-container {
+justify-content: center;
+gap: 25px;
+}
+
+.footer-box {
+flex: 1 1 300px;
+text-align: center;
+}
+}
+
+/* ===========================
+Mobile
+=========================== */
+
+@media (max-width: 768px) {
+
+footer {
+padding: 35px 20px 15px;
+}
+
+.footer-container {
+flex-direction: column;
+align-items: center;
+text-align: center;
+gap: 30px;
+}
+
+.footer-box {
+width: 100%;
+max-width: 350px;
+min-width: auto;
+}
+
+.footer-box h2 {
+font-size: 22px;
+}
+
+.footer-box p,
+.footer-box a {
+font-size: 15px;
+}
+
+.copyright {
+font-size: 14px;
+}
+}
+
+/* ===========================
+Small Mobile
+=========================== */
+
+@media (max-width: 480px) {
+
+footer {
+padding: 30px 15px 10px;
+}
+
+.footer-box h2 {
+font-size: 20px;
+}
+
+.footer-box p,
+.footer-box a {
+font-size: 14px;
+}
+
+.copyright {
+font-size: 13px;
+}
+}
+
+
+
+
+/* Mobile responsiveness  */
+@media (max-width: 768px) {
+    .signup {
+        padding: 30px 10px 50px;
+    }
+    .hero{
+        margin-bottom: 100px;    
+    }
+
+    .signup-box {
+        width: 100%;
+        padding: 25px;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+}
